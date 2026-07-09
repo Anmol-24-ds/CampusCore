@@ -27,7 +27,7 @@ public class StudentService {
     }
     ////get student by id
     public StudentDTO getStudentById( int id){
-        Student student = studentRepository.findById(id).orElseThrow(() -> new StudentNotFoundException("Student with ID"  + id +  "not found"));
+        Student student = studentRepository.findById(id).orElseThrow(() -> new StudentNotFoundException("Student with ID"+" " + id +" "+  "not found"));
         return convertToDTO(student);
     }
     //update student
