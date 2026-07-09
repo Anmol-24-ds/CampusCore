@@ -1,41 +1,25 @@
-# CampusCore - Student Management System
+## CampusCore - Student Management System
 
-## Overview
-CampusCore is a Student Management REST API built using Java Spring Boot.
+A backend system to manage student records with full CRUD operations, 
+built using Spring Boot and MySQL.
 
-## Features
-- Add Student
-- Get All Students
-- Get Student By ID
-- Update Student
-- Delete Student
-- Global Exception Handling
-- Input Validation
-- MySQL Database Integration
-- REST APIs tested using Postman
+### Tech Stack
+- Java 17, Spring Boot, Spring Data JPA, MySQL, Maven
 
-## Tech Stack
-- Java 21
-- Spring Boot
-- Spring Data JPA
-- MySQL
-- Maven
-- Postman
-- Git
-- GitHub
+### Features
+- Add, update, delete, and search student records
 
-## API Endpoints
+### API Endpoints
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /students | Get all students |
+| GET | /students/{id} | Get student by ID |
+| POST | /students | Add new student |
+| PUT | /students/{id} | Update student |
+| DELETE | /students/{id} | Delete student |
 
-POST /students
-
-GET /students
-
-GET /students/{id}
-
-PUT /students/{id}
-
-DELETE /students/{id}
-
-## Author
-
-Anmol Gupta
+### How to Run
+1. Clone the repo
+2. Configure `application.properties` with your MySQL credentials
+3. Run `mvn spring-boot:run`
+4. Test via Postman at `http://localhost:8080`
