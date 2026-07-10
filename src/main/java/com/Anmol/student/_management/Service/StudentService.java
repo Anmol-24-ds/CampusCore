@@ -19,7 +19,7 @@ public class StudentService {
     //add
     public String addStudent(Student student) {
         studentRepository.save(student);
-        return "Student added Successfully";
+        return "Student Added Successfully";
     }
     //get all
     public List<Student> getAllStudents()       {

@@ -17,11 +17,11 @@ public class Student {
     private int id;
     @NotBlank(message= "Name should not be blank")
     private String name;
-    @Min(value=18 , message="Age should be Atleast 18")
+    @Min(value=18 , message= "Age should be Atleast 18")
     private int age;
-    @NotBlank(message="Course should not be empty")
+    @NotBlank(message= "Course should not be empty")
     private String course;
-    @Email(message="Enter a valid Email")
+    @Email(message= "Enter a valid Email")
     @NotBlank(message = "email cannot be empty")
     private String email;
 }
