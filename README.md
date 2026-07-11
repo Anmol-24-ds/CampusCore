@@ -23,3 +23,5 @@ built using Spring Boot and MySQL.
 2. Configure `application.properties` with your MySQL credentials
 3. Run `mvn spring-boot:run`
 4. Test via Postman at `http://localhost:8080`
+
+###I have uploaded The PNG files which are the screenshots of Showing how we deal with student Data using this project in Postman###
